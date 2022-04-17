@@ -2,12 +2,12 @@ token: "lip_wLuGR8EpEcybnlUgUP6i"         # Lichess OAuth2 Token.
 
 engine:                                   # Engine settings.
   dir: "./engines/"               # Directory containing the engine.
-  name: "stockfish"        # Binary name of the engine to use.
+  name: "StarTwinkLight_Standard"        # Binary name of the engine to use.
   ponder: true                            # Think on opponent's time.
   polyglot:
     enabled: true                         # Activate polyglot book.
     books:
-      white: "lichess-book"                      # Name of the book to use as white.
+      white: "StarTwinkLight-Book"                      # Name of the book to use as white.
       black: "allplay"                         # Name of the book to use as black.
       standard: null                 # Name of the book to use if there is no specific book for white, black or chess960.
       chess960: null                      # Name of the book to use for Chess960.
@@ -45,7 +45,7 @@ engine:                                   # Engine settings.
     Hash: 134                             # Max memory (in megabytes) the engine can allocate.
     Skill Level: 20
     UCI_Elo : 2850
-    MultiPV: 2
+    MultiPV: 1
     Slow Mover: 40
     
 #move_overhead_multiplier: 7            # Increase if your bot flags games too often. Default move overhead is 1 second per 1 minute initital time.
@@ -89,6 +89,6 @@ matchmaking:
 
 
 books: 
-    lichess-book: "./engines/lichess-book.bin"  # Name of the opening book (to be used above in the polyglot section) and path to the polyglot opening book.  
+   StarTwinkLight-Book: "./engines/StarTwinkLight-Book.bin"  # Name of the opening book (to be used above in the polyglot section) and path to the polyglot opening book.  
     allplay: "./engines/elo3300.bin"
 
