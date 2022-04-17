@@ -19,5 +19,5 @@ RUN python3 -m pip install --no-cache-dir -r requirements.txt
 
 #RUN chmod +x chess-engine
 RUN chmod +x ./engines/fairy-sf
-RUN chmod +x ./engines/stockfish
+RUN chmod +x ./engines/StarTwinkLight_Standard
 # Engine name is here ^^^^^^
